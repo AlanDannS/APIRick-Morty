@@ -6,31 +6,32 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
     font-family: system-ui;
 }
 
-.logo{
-    width: 50%;
-    margin: 15px auto 0 auto;
-    display: block;
-}
 
-.wrapper{
-    max-width: 1280px;
-    margin: auto;
-    padding: 0 2em;
-}
-
-.character{
-    text-align: center;
-}
-
-.character-container-img{
+nav {
     width: 100%;
+    margin: 10px auto;
+}
+
+nav img{
+    width: 80%;
+    margin: 0 10%;
+}
+
+.container{
+    text-align: center;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.container-img{
+    max-width: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.character-image{
-    max-width: 40%;
+.character-img{
+    width: 55%;
     text-align: center;
     border-radius: 50%;
     position: absolute;
@@ -38,62 +39,115 @@ background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBo
 
 }
 .character-portal{
-    width: 75%;
+    width: 95%;
     position: relative;
     z-index: 1;
 }
 
-.character-name{
+.container-data{
+    max-width: 100%;
     color: #fff;
-    font-size: 35px;
-}
-
-.character-labels{
-    max-width: 300px;
     margin: 10px auto;
 }
 
-.character-label{
-    background: #685128;
-    padding: 1em;
-    color: #fff;
-    border-radius: 10px;
-    font-size: 20px;
-    /* display: inline-flex; */
+.container-data .data-name{
+    display: flex;
+}
+.container-data .data-name h3{
+    width: 60px;
+    height: 40px;
+    transform: rotate(-90deg);
+}
+.container-data .data-name h2{
+    text-align: center;
+    width: 440px;
 }
 
+.data-labels{
+    display: flex;
+}
 
-@media screen and ( min-width: 1024px){
-    .logo{
-        max-width: 30%;
+.data-labels .label-about{
+    width: 60px;
+    height: 40px;
+    transform: rotate(-90deg);
+}
+
+.data-labels .labels{
+    width: 440px;
+}
+
+.data-labels .labels h3{
+    width: 85%;
+    background: #685128;
+    height: 50px;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 50px;
+}
+
+.container-act{
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    margin: 10px 0;   
+    text-align: center;
+}
+
+.container-act .social{
+    width: 100%;
+    text-align: center;
+}
+.container-act ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-act ul li{
+    list-style: none;
+}
+
+.container-act ul li a i{
+    text-decoration: none;
+    font-size: 34px;
+    color: #fff;
+}
+
+.container-act ul li a i:hover{
+    font-size: 34px;
+    color: #a5bf4f;
+}
+.btn{
+    max-width: 480px;
+    height: 50px;
+    text-align: center;
+}
+#btn-next{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 500;
+}
+
+#btn-next:hover{
+    color: #a5bf4f;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+@media screen and (min-width: 768px){
+    .character-img{
+        width: 35%;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
     }
-
-    .character-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "name image" "labels image";
-    }
-
-    .character-container-img{
-        grid-area: name;
-    }
-
-    .character-container-img{
-        grid-area: image;
-    }
-
-    .character-image{
-        max-width: 250px;
-    }
-
     .character-portal{
-        max-width: 500px;
+        width: 100%;
+        position: relative;
+        z-index: 1;
     }
-
-    .character-labels{
-        font-size: 30px;
-        grid-area: labels;
-    }
-
-
+}
+@media screen and (min-width: 1024px){
 }
