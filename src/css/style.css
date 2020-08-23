@@ -170,7 +170,7 @@ nav img{
     .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50vh 12.5vh 12.5vh;
+        grid-template-rows: 50vh 15vh 10vh;
         grid-template-areas:"about image"
                             "social social"
                             "next next" ;
