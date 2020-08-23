@@ -31,10 +31,14 @@ function initApp(initCharacterId) {
 }
 
 window.onload = function () {
-  var cont = 0;
+  var cont = 1;
 
   document.getElementById("btn-next").onclick = function () {
     cont++;
     initApp(cont);
   };
 };
+
+window.addEventListener('load', function () {
+  initApp(1);
+});
